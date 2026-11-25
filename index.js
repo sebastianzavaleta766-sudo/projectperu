@@ -27,7 +27,7 @@ app.get('/', function(req, res){
 
 app.get('/usuarios', function(req, res){
  
-    conexion.query("SELECT * FROM mensaje", function(error, resultados){
+    conexion.query("SELECT * FROM info", function(error, resultados){
  
         if(error){
             throw error;
