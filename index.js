@@ -46,7 +46,7 @@ app.get('/usuarios', function(req, res){
 app.post('/validar', function(req, res){
   const datos=req.body;
   console.log(datos);
-  let nombres=datos.nombres;
+  let nombre=datos.nombres;
   let celular=datos.celular;
   let correo=datos.correo;
   let mensaje=datos.mensaje;
