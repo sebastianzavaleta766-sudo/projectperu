@@ -11,10 +11,11 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}))
 
 let conexion=mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "peru",
+    host: process.env.MYSQLHOST,
+    port: process.env.MYSQLPORT,
+    database: process.env.MYSQLDATABASE,
+    user: process.env.MYSQLUSER,
+    password: process.env.MYSQLPASSWORD
 });
 
 //MOSTRAR OAGINA PRINCIPAL
